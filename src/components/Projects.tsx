@@ -18,10 +18,115 @@ import daffahImg from "@/assets/daffahImg.png";
 import alNassrStoreImg from "@/assets/alNassrStoreImg.png";
 import nextjsPerformanceBoosterImg from "@/assets/npm.png";
 import alJazeaPharmacyImg from "@/assets/alJazeaPharmacyImg.png";
-import waslnyDashboardImg from "@/assets/waslnyDashboardImg.png"
+import waslnyDashboardImg from "@/assets/waslnyDashboardImg.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
+  {
+    id: 6,
+    title: "Souq Mahala – Local E-Commerce Marketplace",
+    description:
+      "Souq Mahala is a local online marketplace designed for El-Mahalla city. It connects local stores and customers through a unified platform that features categorized shopping, product search, offers, and merchant dashboards. The system provides secure payment, 24/7 support, and a dedicated mobile app for seamless access.",
+    image: souqMahalaImg,
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Stripe / Local Payment Gateway",
+    ],
+    liveUrl: "https://souq-mahala.com",
+    githubUrl: "",
+    featured: true,
+  },
+  {
+    id: 7,
+    title: "Bab Sharqi – Premium Arabic Sweets Store",
+    description:
+      "Bab Sharqi is an online store built for authentic Arabic sweets lovers. It offers a rich selection of products such as Baklava, Petit Four, and Eastern delicacies. The platform features a modern shopping experience with categorized listings, product search, secure checkout, and newsletter subscriptions, all developed with performance and UX in mind. Built with full support for Arabic and English languages, optimized for SEO and responsive on all devices.",
+    image: babSharqiImg,
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Zid Integration",
+      "Microfrontend Custom Components",
+      "Twig Template Engine",
+      "Localization (Arabic/English)",
+    ],
+    liveUrl: "https://babsharqi.zid.store",
+    githubUrl: "",
+    featured: true,
+  },
+  {
+    id: 11,
+    title: "Waslny – Customizable Admin Dashboard",
+    description:
+      "Waslny is a highly customizable admin dashboard template originally built with Vuexy on multiple frameworks (Next.js, React, HTML). I worked extensively on customizing it for different clients, implementing dashboards, analytics, eCommerce management, logistics tracking, user and role management, charts, reports, and various UI tweaks. Note: I customized and extended the template multiple times but did not build it from scratch.",
+    image: waslnyDashboardImg,
+    technologies: [
+      "Next.js",
+      "React",
+      "Vuexy Admin Template",
+      "TailwindCSS / MUI",
+      "Custom Dashboard Customization",
+      "Charts.js / ApexCharts",
+    ],
+    liveUrl: "https://golden-waste.vercel.app/en/dashboards/ecommerce",
+    githubUrl: "",
+    featured: true,
+  },
+  {
+    id: 8,
+    title: "Daffah – Luxury Traditional Clothing Brand",
+    description:
+      "Daffah is a premium Saudi brand specializing in high-quality traditional clothing. The platform showcases elegant and ready-made thobes crafted with attention to detail and modern fashion trends. It provides customers with a seamless shopping experience that includes product browsing, multiple payment options, return and shipping policies, and branch information. The website reflects the brand’s commitment to quality, elegance, and customer satisfaction.",
+    image: daffahImg,
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Zid Integration",
+      "Microfrontend Custom Components",
+      "Twig Template Engine",
+      "Responsive Design",
+    ],
+    liveUrl: "https://daffah.sa",
+    githubUrl: "",
+    featured: true,
+  },
+  {
+    id: 9,
+    title: "Al Jazea Pharmacy – Online Healthcare & Pharmacy Services",
+    description:
+      "Al Jazea Pharmacy, established in 1986, offers comprehensive healthcare and pharmaceutical services online. It provides prescription fulfillment, vitamins and supplements, personal care, baby and mother care, and medical devices, along with easy online consultations. The platform ensures secure orders, reliable delivery, and continuous customer support.",
+    image: alJazeaPharmacyImg,
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Stripe / Local Payment Gateway",
+      "Zid Integration",
+      "Custom Pharmacy Management System",
+    ],
+    liveUrl: "https://aljazeaonline.com",
+    githubUrl: "",
+    featured: true,
+  },
+  {
+    id: 10,
+    title: "Al Nassr Official Store – Saudi Football Club E-Commerce",
+    description:
+      "Al Nassr Official Store is the e-commerce platform for Al Nassr Football Club, offering official kits, player jerseys, training gear, and accessories for fans worldwide. The store features customizable jerseys, multiple size options, safe payment methods, fast delivery, and seasonal collections for the 2025/26 season.",
+    image: alNassrStoreImg,
+    technologies: [
+      "Next.js",
+      "React",
+      "Zid Integration",
+      "Microfrontend Custom Components",
+      "Twig Template Engine",
+      "Tailwind CSS",
+    ],
+    liveUrl: "https://store.alnassr.sa",
+    githubUrl: "",
+    featured: true,
+  },
   {
     id: 1,
     title: "Beryl AI – Intelligent Automation Platform",
@@ -145,111 +250,6 @@ const projects = [
       "SEO-optimized with responsive design for all devices",
       "Includes statistics dashboard for pages, ads, and visitors count",
     ],
-  },
-  {
-    id: 6,
-    title: "Souq Mahala – Local E-Commerce Marketplace",
-    description:
-      "Souq Mahala is a local online marketplace designed for El-Mahalla city. It connects local stores and customers through a unified platform that features categorized shopping, product search, offers, and merchant dashboards. The system provides secure payment, 24/7 support, and a dedicated mobile app for seamless access.",
-    image: souqMahalaImg,
-    technologies: [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "Stripe / Local Payment Gateway",
-    ],
-    liveUrl: "https://souq-mahala.com",
-    githubUrl: "",
-    featured: true,
-  },
-  {
-    id: 7,
-    title: "Bab Sharqi – Premium Arabic Sweets Store",
-    description:
-      "Bab Sharqi is an online store built for authentic Arabic sweets lovers. It offers a rich selection of products such as Baklava, Petit Four, and Eastern delicacies. The platform features a modern shopping experience with categorized listings, product search, secure checkout, and newsletter subscriptions, all developed with performance and UX in mind. Built with full support for Arabic and English languages, optimized for SEO and responsive on all devices.",
-    image: babSharqiImg,
-    technologies: [
-      "React",
-      "Tailwind CSS",
-      "Zid Integration",
-      "Microfrontend Custom Components",
-      "Twig Template Engine",
-      "Localization (Arabic/English)",
-    ],
-    liveUrl: "https://babsharqi.zid.store",
-    githubUrl: "",
-    featured: true,
-  },
-  {
-    id: 11,
-    title: "Waslny – Customizable Admin Dashboard",
-    description:
-      "Waslny is a highly customizable admin dashboard template originally built with Vuexy on multiple frameworks (Next.js, React, HTML). I worked extensively on customizing it for different clients, implementing dashboards, analytics, eCommerce management, logistics tracking, user and role management, charts, reports, and various UI tweaks. Note: I customized and extended the template multiple times but did not build it from scratch.",
-    image: waslnyDashboardImg,
-    technologies: [
-      "Next.js",
-      "React",
-      "Vuexy Admin Template",
-      "TailwindCSS / MUI",
-      "Custom Dashboard Customization",
-      "Charts.js / ApexCharts",
-    ],
-    liveUrl: "https://golden-waste.vercel.app/en/dashboards/ecommerce",
-    githubUrl: "",
-    featured: true,
-  },
-  {
-    id: 8,
-    title: "Daffah – Luxury Traditional Clothing Brand",
-    description:
-      "Daffah is a premium Saudi brand specializing in high-quality traditional clothing. The platform showcases elegant and ready-made thobes crafted with attention to detail and modern fashion trends. It provides customers with a seamless shopping experience that includes product browsing, multiple payment options, return and shipping policies, and branch information. The website reflects the brand’s commitment to quality, elegance, and customer satisfaction.",
-    image: daffahImg,
-    technologies: [
-      "React",
-      "Tailwind CSS",
-      "Zid Integration",
-      "Microfrontend Custom Components",
-      "Twig Template Engine",
-      "Responsive Design",
-    ],
-    liveUrl: "https://daffah.sa",
-    githubUrl: "",
-    featured: true,
-  },
-  {
-    id: 9,
-    title: "Al Jazea Pharmacy – Online Healthcare & Pharmacy Services",
-    description:
-      "Al Jazea Pharmacy, established in 1986, offers comprehensive healthcare and pharmaceutical services online. It provides prescription fulfillment, vitamins and supplements, personal care, baby and mother care, and medical devices, along with easy online consultations. The platform ensures secure orders, reliable delivery, and continuous customer support.",
-    image: alJazeaPharmacyImg,
-    technologies: [
-      "React",
-      "Tailwind CSS",
-      "Stripe / Local Payment Gateway",
-      "Zid Integration",
-      "Custom Pharmacy Management System",
-    ],
-    liveUrl: "https://aljazeaonline.com",
-    githubUrl: "",
-    featured: true,
-  },
-  {
-    id: 10,
-    title: "Al Nassr Official Store – Saudi Football Club E-Commerce",
-    description:
-      "Al Nassr Official Store is the e-commerce platform for Al Nassr Football Club, offering official kits, player jerseys, training gear, and accessories for fans worldwide. The store features customizable jerseys, multiple size options, safe payment methods, fast delivery, and seasonal collections for the 2025/26 season.",
-    image: alNassrStoreImg,
-    technologies: [
-      "Next.js",
-      "React",
-      "Zid Integration",
-      "Microfrontend Custom Components",
-      "Twig Template Engine",
-      "Tailwind CSS",
-    ],
-    liveUrl: "https://store.alnassr.sa",
-    githubUrl: "",
-    featured: true,
   },
 ];
 
