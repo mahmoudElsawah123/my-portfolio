@@ -22,22 +22,22 @@ import waslnyDashboardImg from "@/assets/waslnyDashboardImg.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-  {
-    id: 6,
-    title: "Souq Mahala – Local E-Commerce Marketplace",
-    description:
-      "Souq Mahala is a local online marketplace designed for El-Mahalla city. It connects local stores and customers through a unified platform that features categorized shopping, product search, offers, and merchant dashboards. The system provides secure payment, 24/7 support, and a dedicated mobile app for seamless access.",
-    image: souqMahalaImg,
-    technologies: [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "Stripe / Local Payment Gateway",
-    ],
-    liveUrl: "https://souq-mahala.com",
-    githubUrl: "",
-    featured: true,
-  },
+  // {
+  //   id: 6,
+  //   title: "Souq Mahala – Local E-Commerce Marketplace",
+  //   description:
+  //     "Souq Mahala is a local online marketplace designed for El-Mahalla city. It connects local stores and customers through a unified platform that features categorized shopping, product search, offers, and merchant dashboards. The system provides secure payment, 24/7 support, and a dedicated mobile app for seamless access.",
+  //   image: souqMahalaImg,
+  //   technologies: [
+  //     "Next.js",
+  //     "React",
+  //     "Tailwind CSS",
+  //     "Stripe / Local Payment Gateway",
+  //   ],
+  //   liveUrl: "https://souq-mahala.com",
+  //   githubUrl: "",
+  //   featured: true,
+  // },
   {
     id: 7,
     title: "Bab Sharqi – Premium Arabic Sweets Store",
