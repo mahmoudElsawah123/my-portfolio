@@ -39,6 +39,48 @@ const projects = [
   //   featured: true,
   // },
   {
+    id: 1,
+    title: "Seela AI",
+    description:
+      "An advanced AI-driven automation platform designed to optimize compliance, streamline document processing, and enhance business efficiency. Built with a modern stack and featuring modular AI services including data extraction, document translation, fraud detection, and AI chatbots.",
+    image: berylAiImg,
+    technologies: [
+      "Next.js",
+      "React",
+      "Node.js",
+      "Tailwind CSS",
+      "Cloud Deployment",
+    ],
+    liveUrl: "https://www.seelaai.com/en",
+    githubUrl: "#",
+    featured: true,
+    highlights: [
+      "AI-powered data extraction from unstructured documents like PDFs and invoices",
+      "Automated multilingual document translation with format preservation",
+      "Fraud detection for invoices and bank statements using AI models",
+      "Smart AI chatbots with real-time multilingual communication and CRM integration",
+      "Cloud-native, scalable, and secure architecture with flexible deployment options (Cloud / Hybrid / On-premise)",
+    ],
+  },
+  {
+    id: 10,
+    title: "Al Nassr Official Store – Saudi Football Club E-Commerce",
+    description:
+      "Al Nassr Official Store is the e-commerce platform for Al Nassr Football Club, offering official kits, player jerseys, training gear, and accessories for fans worldwide. The store features customizable jerseys, multiple size options, safe payment methods, fast delivery, and seasonal collections for the 2025/26 season.",
+    image: alNassrStoreImg,
+    technologies: [
+      "Next.js",
+      "React",
+      "Zid Integration",
+      "Microfrontend Custom Components",
+      "Twig Template Engine",
+      "Tailwind CSS",
+    ],
+    liveUrl: "https://store.alnassr.sa",
+    githubUrl: "",
+    featured: true,
+  },
+  {
     id: 7,
     title: "Bab Sharqi – Premium Arabic Sweets Store",
     description:
@@ -108,48 +150,6 @@ const projects = [
     liveUrl: "https://aljazeaonline.com",
     githubUrl: "",
     featured: true,
-  },
-  {
-    id: 10,
-    title: "Al Nassr Official Store – Saudi Football Club E-Commerce",
-    description:
-      "Al Nassr Official Store is the e-commerce platform for Al Nassr Football Club, offering official kits, player jerseys, training gear, and accessories for fans worldwide. The store features customizable jerseys, multiple size options, safe payment methods, fast delivery, and seasonal collections for the 2025/26 season.",
-    image: alNassrStoreImg,
-    technologies: [
-      "Next.js",
-      "React",
-      "Zid Integration",
-      "Microfrontend Custom Components",
-      "Twig Template Engine",
-      "Tailwind CSS",
-    ],
-    liveUrl: "https://store.alnassr.sa",
-    githubUrl: "",
-    featured: true,
-  },
-  {
-    id: 1,
-    title: "Beryl AI – Intelligent Automation Platform",
-    description:
-      "An advanced AI-driven automation platform designed to optimize compliance, streamline document processing, and enhance business efficiency. Built with a modern stack and featuring modular AI services including data extraction, document translation, fraud detection, and AI chatbots.",
-    image: berylAiImg,
-    technologies: [
-      "Next.js",
-      "React",
-      "Node.js",
-      "Tailwind CSS",
-      "Cloud Deployment",
-    ],
-    liveUrl: "https://www.aiberyl.com/en",
-    githubUrl: "#",
-    featured: true,
-    highlights: [
-      "AI-powered data extraction from unstructured documents like PDFs and invoices",
-      "Automated multilingual document translation with format preservation",
-      "Fraud detection for invoices and bank statements using AI models",
-      "Smart AI chatbots with real-time multilingual communication and CRM integration",
-      "Cloud-native, scalable, and secure architecture with flexible deployment options (Cloud / Hybrid / On-premise)",
-    ],
   },
   {
     id: 5555,
@@ -276,7 +276,7 @@ const ProjectCard = ({
             trigger: cardRef.current,
             start: "top 80%",
           },
-        }
+        },
       );
     }, cardRef);
 
@@ -437,7 +437,7 @@ export const Projects = () => {
           key={featuredProject.id}
           project={featuredProject}
           index={i}
-        />
+        />,
       );
 
       // Add a non-featured project next to this featured one if available
@@ -448,7 +448,7 @@ export const Projects = () => {
             key={nonFeaturedProject.id}
             project={nonFeaturedProject}
             index={i + 0.5}
-          />
+          />,
         );
         nonFeaturedIndex++;
       }
